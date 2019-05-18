@@ -60,6 +60,16 @@ public class Wagon {
         }
         else throw new LimitSizeException();
 
+
         //To do: getPrice
+    }
+
+    public double getPrice (){
+        double price = 0;
+        for (Box box:
+                boxes){
+            price += box.getBoxPrice();
+        }
+        return price;
     }
 }

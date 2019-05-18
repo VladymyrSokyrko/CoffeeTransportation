@@ -6,10 +6,10 @@ import exception.*;
 public class Box {
     private String name;
     private ArrayList<CoffeePackage> coffeePackages = new ArrayList<>();
-    private Double length;
-    private Double width;
-    private Double height;
-    private Double maxWeight;
+    private Double length = 120.00;
+    private Double width = 120.00;
+    private Double height = 120.00;
+    private Double maxWeight = 20000.00;
 
     public Double getLength() {
         return length;
@@ -80,7 +80,7 @@ public class Box {
     }
 
     public Double boxCapacity (){
-      return this.height * this.length * this.maxWeight;
+      return this.height * this.length * this.height;
     }
 
     public Double getBoxPrice (){
